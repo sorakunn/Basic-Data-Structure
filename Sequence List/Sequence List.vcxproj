@@ -123,6 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="0. Typedef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="1. Main.cpp" />
+    <ClCompile Include="2. Insert.cpp" />
+    <ClCompile Include="3. Delete.cpp" />
+    <ClCompile Include="4. Locate.cpp" />
+    <ClCompile Include="Print.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
