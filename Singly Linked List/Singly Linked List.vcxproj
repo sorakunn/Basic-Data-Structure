@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1. Main.cpp" />
+    <ClCompile Include="4. Locate.cpp" />
     <ClCompile Include="5. Get.cpp" />
     <ClCompile Include="6. CreateHead.cpp" />
     <ClCompile Include="7. CreateTail.cpp" />
