@@ -15,6 +15,6 @@ SLNode LocateElem(SLNode head, Elem x);					// 探索（查找值为x的第一个Elem元素并
 void CreatHead(SLNode &head, Elem x);					// 先頭への挿入（从后往前逆向建立，每次将新元素插在"头指针后"）
 void CreatTail(SLNode &head, Elem x);					// 後尾への挿入（从前往后正向建立，每次将新元素插在"表尾"）
 
-SLNode GetElem(SLNode head, int p);						// 取り出す（查找第i个位置的结点并返回其指针）
+SLNode* GetElem(SLNode *head, int index);		// 取り出す（查找第i个位置的结点并返回其指针）
 
 void Print(SLNode head); 								// 出力
