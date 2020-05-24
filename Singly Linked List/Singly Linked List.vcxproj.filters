@@ -23,6 +23,9 @@
     <ClCompile Include="1. Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="6. CreateHead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="2. Insert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -32,10 +35,10 @@
     <ClCompile Include="4. Locate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Print.cpp">
+    <ClCompile Include="5. Get.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="5. Get.cpp">
+    <ClCompile Include="Print.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
