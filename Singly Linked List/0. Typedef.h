@@ -17,4 +17,4 @@ void CreateTail(SLNode *head, Elem x[], int n);			// ááÎ²¤Ø¤Î’·Èë£¨´ÓÇ°ÍùºóÕıÏò½
 
 SLNode* GetElem(SLNode *head, int index);				// È¡¤ê³ö¤¹£¨²éÕÒµÚi¸öÎ»ÖÃµÄ½áµã²¢·µ»ØÆäÖ¸Õë£©
 
-void Print(SLNode head); 								// ³öÁ¦
+void Print(SLNode *head); 								// ³öÁ¦

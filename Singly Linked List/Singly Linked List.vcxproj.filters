@@ -26,18 +26,6 @@
     <ClCompile Include="6. CreateHead.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2. Insert.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="3. Delete.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="4. Locate.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="5. Get.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Print.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
