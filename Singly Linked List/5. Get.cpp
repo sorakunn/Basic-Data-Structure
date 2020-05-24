@@ -2,10 +2,10 @@
 /*********************************************************************************
   *Function:  		GetElem
   *Description：		查找位置index的结点并返回其指针
-					SLNode head	: 待执行查找操作链表的头指针
-					int index	: 目标结点的位置index
-  *Output:  None
-  *Return:  (SLNode*) pointer of target Linkedlist Node
+					SLNode head		待执行查找操作链表的头指针
+					int index	目标结点的位置index
+  *Output:  无
+  *Return:  (SLNode*) 指向目标结点的指针
 **********************************************************************************/
 SLNode* GetElem(SLNode *head, int index) {
 	if (index < 0) return NULL;					// 查找位置 "小于起点"

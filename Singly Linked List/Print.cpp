@@ -14,4 +14,5 @@ void Print(SLNode *head) {
 		printf("%d ", p->Date);
 		p = p->next;
 	}
+	printf("\n");
 }
