@@ -5,7 +5,7 @@
 typedef int Elem;								// Elem：目標のデータの型
 
 typedef struct SqList{
-	Elem *Date;			 						// Date[]：要素の配列
+	Elem *Date;			 						// *Date：要素配列のアドレス
 	int length;									// length：リストの長さ
 }SqList;
 
