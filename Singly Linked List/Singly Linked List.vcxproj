@@ -18,12 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="0. Typedef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="1. Main.cpp" />
+    <ClCompile Include="2. Insert.cpp" />
+    <ClCompile Include="3. Delete.cpp" />
+    <ClCompile Include="4. Locate.cpp" />
+    <ClCompile Include="Print.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{495AB0C3-16F3-426F-BA6B-909A4FB4A6C7}</ProjectGuid>
-    <RootNamespace>SequenceList</RootNamespace>
+    <ProjectGuid>{FAB18FA7-9B5A-4B7E-B60A-61D0725E29CE}</ProjectGuid>
+    <RootNamespace>SinglyLinkedList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>01.01.1  Sequence List</ProjectName>
+    <ProjectName>01.02.1 Singly Linked List</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -123,16 +133,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="0. Typedef.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="1. Main.cpp" />
-    <ClCompile Include="2. Insert.cpp" />
-    <ClCompile Include="3. Delete.cpp" />
-    <ClCompile Include="4. Locate.cpp" />
-    <ClCompile Include="Print.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
