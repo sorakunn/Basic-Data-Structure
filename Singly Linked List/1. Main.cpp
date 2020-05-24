@@ -8,7 +8,6 @@ int main()
 	SLNode *p=head;
 
 	Elem date[] = { 0,1,2,3,4,5,6 };				// 测试用数据：	Elem date[] = {0,1,2,3,4,5,6}
-
 	CreateHead(head, date, 7);						// 通过 "头插法" 构造一个单链表
 	Print(p);										// 输出结果：	{6,5,4,3,2,1,0}
 	CreateTail(head, date, 7);						// 通过 "尾插法" 构造一个单链表
