@@ -12,8 +12,8 @@ bool InsertElem(SLNode &head, int p, Elem x);			// ’·Èë£¨ÔÚÖ¸¶¨ÏÂ±êÎ»ÖÃ´¦’·ÈëËù¸
 bool DeleteElem(SLNode &head, int p, Elem x);			// Ï÷³ı£¨É¾³ı²¢È¡³öÖ¸¶¨ÏÂ±êÎ»ÖÃÉÏµÄÊı£©
 SLNode LocateElem(SLNode head, Elem x);					// Ì½Ë÷£¨²éÕÒÖµÎªxµÄµÚÒ»¸öElemÔªËØ²¢·µ»ØÆäÖ¸Õë£©
 
-void CreateHead(SLNode *head, Elem x[], int n);			// ÏÈî^¤Ø¤Î’·Èë£¨´ÓºóÍùÇ°ÄæÏò½¨Á¢Á´±í£¬Ã¿´Î½«ĞÂÔªËØ²åÔÚ"Í·Ö¸Õëºó"£©
-void CreateTail(SLNode *head, Elem x[], int n);			// ááÎ²¤Ø¤Î’·Èë£¨´ÓÇ°ÍùºóÕıÏò½¨Á¢Á´±í£¬Ã¿´Î½«ĞÂÔªËØ²åÔÚ"±íÎ²"£©
+void CreateHead(SLNode *head, Elem x[], int n);			// ÏÈî^¤Ø¤Î’·Èë£¨´ÓºóÍùÇ°ÄæÏò½¨Á¢µ¥Á´±í£¬Ã¿´Î½«ĞÂÔªËØ²åÔÚ"Í·Ö¸Õëºó"£©
+void CreateTail(SLNode *head, Elem x[], int n);			// ááÎ²¤Ø¤Î’·Èë£¨´ÓÇ°ÍùºóÕıÏò½¨Á¢µ¥Á´±í£¬Ã¿´Î½«ĞÂÔªËØ²åÔÚ"±íÎ²"£©
 
 SLNode* GetElem(SLNode *head, int index);				// È¡¤ê³ö¤¹£¨²éÕÒµÚi¸öÎ»ÖÃµÄ½áµã²¢·µ»ØÆäÖ¸Õë£©
 

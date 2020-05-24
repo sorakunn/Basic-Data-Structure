@@ -1,8 +1,8 @@
 #include "0. Typedef.h"
 /*********************************************************************************
-  *Function:  		CreatHead
+  *Function:  		CreateHead
   *Description：		从后往前逆向建立单链表，每次将新元素插在"头指针后"
-					SLNode &head	待执行 "头插法" 建表的头指针
+					SLNode *head	待执行 "头插法" 建表的头指针
 					Elem x[]		存放待插入元素的数组
 					int n			数组中待插入元素的个数
   *Output:  完成元素插入的单链表的头指针
