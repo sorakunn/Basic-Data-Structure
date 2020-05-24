@@ -3,7 +3,7 @@
   *Function:  		GetElem
   *Description：		查找位置index的结点并返回其指针
 					SLNode head		待执行查找操作链表的头指针
-					int index	目标结点的位置index
+					int index		目标结点的位置index
   *Output:  无
   *Return:  (SLNode*) 指向目标结点的指针
 **********************************************************************************/
