@@ -27,6 +27,7 @@
     <ClCompile Include="3. Delete.cpp" />
     <ClCompile Include="4. Locate.cpp" />
     <ClCompile Include="5. Get.cpp" />
+    <ClCompile Include="6. CreateHead.cpp" />
     <ClCompile Include="Print.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
