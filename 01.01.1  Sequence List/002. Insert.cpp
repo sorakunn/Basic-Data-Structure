@@ -4,7 +4,7 @@
   *描述： 在顺序表的指定下标index处挿入所给元素x
   *输入：	Sqlist &list		待执行插入操作顺序表的引用类型&list
 		int index		插入位置的下标index
-		Elem x			待插入的Elem元素
+		Elem x			待插入的目标元素x
   *输出： 已插入指定元素的顺序表引用类型&list
   *返回：	bool true		插入成功的反馈
 		bool false		插入失败的反馈
