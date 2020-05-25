@@ -3,7 +3,7 @@
 int main()
 {
 	SqList list;
-	list.Date = (Elem *)malloc(sizeof(Elem)*MAXSIZE);	// 初始化一个线性表
+	list.Date = (Elem *)malloc(sizeof(Elem)*MAXSIZE);	// 初始化一个线性表 
 	list.length = 0;
 	/* 插入建表 */
 	for (int i = 0; i <= 5; i++) InsertElem(list, i, i);	// 通过 "插入" 构造一个顺序表
