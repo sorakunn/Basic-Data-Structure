@@ -126,7 +126,7 @@
     <ClInclude Include="0000. Typedef.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0010. ★Main.cpp" />
+    <ClCompile Include="0010. Main.cpp" />
     <ClCompile Include="0020. Insert.cpp" />
     <ClCompile Include="0021. CreateHead.cpp" />
     <ClCompile Include="0022. CreateTail.cpp" />
