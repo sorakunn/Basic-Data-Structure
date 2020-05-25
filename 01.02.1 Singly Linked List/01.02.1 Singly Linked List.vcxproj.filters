@@ -24,6 +24,9 @@
     <ClCompile Include="0040. Locate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0041. Get.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0000. Typedef.h">
