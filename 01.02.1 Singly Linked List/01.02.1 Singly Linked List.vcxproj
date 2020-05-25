@@ -126,7 +126,7 @@
     <ClInclude Include="0000. Typedef.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0002. Insert.cpp" />
+    <ClCompile Include="0020. Insert.cpp" />
     <ClCompile Include="0003. Delete.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
