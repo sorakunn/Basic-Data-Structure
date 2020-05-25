@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.03.1 Doubly Linked List"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.01.1 Sequence List", "01.01.1 Sequence List\01.01.1  Sequence List.vcxproj", "{6CFA97E5-159A-48BC-BA93-19FD2F6B5A51}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.02.1 Singly Linked List", "01.02.1 Singly Linked List\01.02.1 Singly Linked List.vcxproj", "{0022FA20-DBBC-4098-94B3-ABAA02198D25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{6CFA97E5-159A-48BC-BA93-19FD2F6B5A51}.Release|x64.Build.0 = Release|x64
 		{6CFA97E5-159A-48BC-BA93-19FD2F6B5A51}.Release|x86.ActiveCfg = Release|Win32
 		{6CFA97E5-159A-48BC-BA93-19FD2F6B5A51}.Release|x86.Build.0 = Release|Win32
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Debug|x64.ActiveCfg = Debug|x64
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Debug|x64.Build.0 = Debug|x64
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Debug|x86.ActiveCfg = Debug|Win32
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Debug|x86.Build.0 = Debug|Win32
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Release|x64.ActiveCfg = Release|x64
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Release|x64.Build.0 = Release|x64
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Release|x86.ActiveCfg = Release|Win32
+		{0022FA20-DBBC-4098-94B3-ABAA02198D25}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
