@@ -18,9 +18,6 @@
     <ClCompile Include="0099. Print.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="0010. Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="0020. Insert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -28,6 +25,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="0040. Locate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0010. ★Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
