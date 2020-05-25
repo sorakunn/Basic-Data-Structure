@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClCompile Include="0020. Insert.cpp" />
     <ClCompile Include="0021. CreateHead.cpp" />
+    <ClCompile Include="0022. CreateTail.cpp" />
     <ClCompile Include="0030. Delete.cpp" />
     <ClCompile Include="0040. Locate.cpp" />
     <ClCompile Include="0041. Get.cpp" />
