@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
-typedef int Elem;		// Elem：目標のデータの型
+typedef int Elem;		// Elem：目標のデータの型 
 
 /* "单链表"的定义 */
 typedef struct SLNode{
