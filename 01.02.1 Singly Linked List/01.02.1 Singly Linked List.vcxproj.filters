@@ -23,5 +23,8 @@
     <ClCompile Include="0002. Insert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0003. Delete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
