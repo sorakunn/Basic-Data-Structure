@@ -7,7 +7,7 @@ typedef int Elem;		// Elem：目標のデータの型
 /* "顺序表"的定义 */
 typedef struct SqList{
 	Elem *Date;		// *Date：要素配列のアドレス
-	int length;		// length：
+	int length;		// length：リストの長さ
 }SqList;
 
 /* "顺序表"的基本操作 */
