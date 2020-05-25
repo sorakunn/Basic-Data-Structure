@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{1E911B84-B906-4A6D-9058-551B587C7278}</ProjectGuid>
+    <ProjectGuid>{6CFA97E5-159A-48BC-BA93-19FD2F6B5A51}</ProjectGuid>
     <RootNamespace>My01011SequenceList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
