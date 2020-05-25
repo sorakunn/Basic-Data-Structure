@@ -15,5 +15,5 @@ void CreateHead(SLNode *head, Elem x[], int n);		// 先頭への挿入（从后往前逆向建
 void CreateTail(SLNode *head, Elem x[], int n);		// 後尾への挿入（从前往后正向建立单链表，每次将新元素插在"表尾"）
 bool DeleteElem(SLNode *head, int index);		// 削除（删除单链表的指定序号index结点）
 SLNode* LocateElem(SLNode* head, Elem x);		// 探索（查找值为x的第一个结点并返回其指针）
-SLNode* GetElem(SLNode *head, int index);		// 取出す（查找第i个位置的结点并返回其指针）
+SLNode* GetElem(SLNode *head, int index);		// 取出す（查找指定序号index的结点并返回其指针）
 void Print(SLNode *head); 				// 出力
