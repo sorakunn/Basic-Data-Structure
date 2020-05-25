@@ -123,10 +123,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="0. Typedef.h" />
+    <ClInclude Include="000. Typedef.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2. Insert.cpp" />
+    <ClCompile Include="002. Insert.cpp" />
     <ClCompile Include="3. Delete.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
