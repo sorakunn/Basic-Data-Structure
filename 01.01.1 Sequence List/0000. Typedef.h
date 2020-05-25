@@ -2,7 +2,7 @@
 #include <malloc.h>
 #include <stdbool.h>
 #define MAXSIZE 50 		// MAXSIZE：リストの容量（定数である）
-typedef int Elem;		// Elem：目標のデータの型
+typedef int Elem;		// Elem：目標のデータの型 
 
 /* "顺序表"的定义 */
 typedef struct SqList{
