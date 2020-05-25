@@ -127,7 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="002. Insert.cpp" />
-    <ClCompile Include="3. Delete.cpp" />
+    <ClCompile Include="003. Delete.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
