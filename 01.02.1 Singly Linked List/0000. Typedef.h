@@ -10,7 +10,7 @@ typedef struct SLNode{
 }SLNode;
 
 /* "单链表"的基本操作 */
-bool InsertElem(SLNode *head, int index, Elem x);	// 挿入（在单链表的指定结点index处，挿入包含所给元素x的新结点）
+bool InsertElem(SLNode *head, int index, Elem x);	// 挿入（在单链表的指定结点index处挿入包含所给元素x的新结点）
 void CreateHead(SLNode *head, Elem x[], int n);		// 先頭への挿入（从后往前逆向建立单链表，每次将新元素插在"头指针后"）
 void CreateTail(SLNode *head, Elem x[], int n);		// 後尾への挿入（从前往后正向建立单链表，每次将新元素插在"表尾"）
 bool DeleteElem(SLNode *head, int index);		// 削除（删除单链表的指定序号index结点）
