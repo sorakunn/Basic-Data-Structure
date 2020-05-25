@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
-#define MAXSIZE 50 								// MAXSIZE£º¥ê¥¹¥È¤ÎÈİÁ¿£¨¶¨Êı¤Ç¤¢¤ë£©
-typedef int Elem;								// Elem£ºÄ¿˜Ë¤Î¥Ç©`¥¿¤ÎĞÍ
+#define MAXSIZE 50 								// MAXSIZEï¼šãƒªã‚¹ãƒˆã®å®¹é‡ï¼ˆå®šæ•°ã§ã‚ã‚‹ï¼‰
+typedef int Elem;								// Elemï¼šç›®æ¨™ã®ãƒ‡ãƒ¼ã‚¿ã®å‹
 
 typedef struct SqList{
-	Elem *Date;			 						// *Date£ºÒªËØÅäÁĞ¤Î¥¢¥É¥ì¥¹
-	int length;									// length£º¥ê¥¹¥È¤ÎéL¤µ
+	Elem *Date;			 						// *Dateï¼šè¦ç´ é…åˆ—ã®ã‚¢ãƒ‰ãƒ¬ã‚¹
+	int length;									// lengthï¼šãƒªã‚¹ãƒˆã®é•·ã•
 }SqList;
 
-bool InsertElem(SqList &list, int p, Elem x);			// ’·Èë£¨ÔÚÖ¸¶¨ÏÂ±êÎ»ÖÃ´¦’·ÈëËù¸øÔªËØ£©
-bool DeleteElem(SqList &list, int p, Elem &x);			// Ï÷³ı£¨É¾³ı²¢È¡³öÖ¸¶¨ÏÂ±êÎ»ÖÃÉÏµÄÊı£©
-int LocateElem(SqList list, Elem x);					// Ì½Ë÷£¨²éÕÒÖµÎªxµÄµÚÒ»¸öElemÔªËØ²¢·µ»ØÆäÏÂ±ê£©
+bool InsertElem(SqList &list, int p, Elem x);			// æŒ¿å…¥ï¼ˆåœ¨æŒ‡å®šä¸‹æ ‡ä½ç½®å¤„æŒ¿å…¥æ‰€ç»™å…ƒç´ ï¼‰
+bool DeleteElem(SqList &list, int p, Elem &x);			// å‰Šé™¤ï¼ˆåˆ é™¤å¹¶å–å‡ºæŒ‡å®šä¸‹æ ‡ä½ç½®ä¸Šçš„æ•°ï¼‰
+int LocateElem(SqList list, Elem x);					// æ¢ç´¢ï¼ˆæŸ¥æ‰¾å€¼ä¸ºxçš„ç¬¬ä¸€ä¸ªElemå…ƒç´ å¹¶è¿”å›å…¶ä¸‹æ ‡ï¼‰
 
-void Print(SqList list); 								// ³öÁ¦
+void Print(SqList list); 								// å‡ºåŠ›

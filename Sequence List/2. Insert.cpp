@@ -1,12 +1,12 @@
 #include "0. Typedef.h"
 /*********************************************************************************
-  *Function:  		InsertElem
-  *Description：		在指定下标位置处挿入所给元素
-					/Sqlist *list/ 指向待执行插入操作线性表的指针
-					/int p/ 线性表要插入位置的下标
+  *函数： InsertElem
+  *描述： 在指定下标位置处挿入所给元素
+		/Sqlist *list/ 指向待执行插入操作线性表的指针
+	/int p/ 线性表要插入位置的下标
 					/Elem x/ 待插入的目标Elem元素
-  *Output:  none
-  *Return:  true when the insert operation is successfuly done, otherwise return false
+  *输出:  none
+  *返回:  true when the insert operation is successfuly done, otherwise return false
 **********************************************************************************/
 bool InsertElem(SqList &list, int p, Elem x) {
 	if (p < 0 || p>list.length || list.length == MAXSIZE) {	// 1.插入位置小于起点 2.插入位置大于长度 3.线性表已满
