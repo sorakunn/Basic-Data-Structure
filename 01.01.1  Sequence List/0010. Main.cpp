@@ -1,6 +1,6 @@
 #include "0000. Typedef.h"
 
-void main()
+int main()
 {
 	SqList l;
 	l.Date = (Elem *)malloc(sizeof(Elem)*MAXSIZE);		// 初始化一个线性表
@@ -12,8 +12,9 @@ void main()
 	Print(l);
 
 	Elem e; 						// 删除并取出下标为0位置上的元素		Date[]{1,2,3,4,5,6,7,8,9}
-	DeleteElem(l, 0, e);
+	DeleteElem(l, 0);
 	Print(l);
 
 	printf("%d", LocateElem(l, 9));				// 查找值为9的元素所在的下标位置		8
+	return 0;
 }
