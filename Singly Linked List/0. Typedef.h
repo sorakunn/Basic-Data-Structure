@@ -8,7 +8,7 @@ typedef struct SLNode{
 	struct SLNode *next;						// *next：次のノードを指すポインタ
 }SLNode;
 
-bool InsertElem(SLNode &head, int p, Elem x);			// 挿入（在指定下标位置处挿入所给元素）
+bool InsertElem(SLNode *head, int index, Elem x);		// 挿入（在单链表的指定结点index处，挿入包含所给元素x的新结点）
 bool DeleteElem(SLNode &head, int p, Elem x);			// 削除（删除并取出指定下标位置上的数）
 SLNode* LocateElem(SLNode* head, Elem x);				// 探索（查找值为x的第一个结点并返回其指针）
 

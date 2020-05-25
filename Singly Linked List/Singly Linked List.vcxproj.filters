@@ -38,5 +38,8 @@
     <ClCompile Include="4. Locate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2. Insert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

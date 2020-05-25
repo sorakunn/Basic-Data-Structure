@@ -1,21 +1,20 @@
 #include "0. Typedef.h"
 /*********************************************************************************
   *Function:  		InsertElem
-  *Description：		在指定下标位置处挿入所给元素
-					/Sqlist *list/ 指向待执行插入操作线性表的指针
-					/int p/ 线性表要插入位置的下标
-					/Elem x/ 待插入的目标Elem元素
-  *Output:  none
-  *Return:  true when the insert operation is successfuly done, otherwise return false
+  *Description：		在单链表的指定结点index处，挿入包含所给元素x的新结点
+					SLNode *head	待执行插入操作链表的头指针
+					int index		目标结点的序号index
+					Elem x			待插入的目标Elem元素
+  *Output:  已插入新结点的单链表头指针
+  *Return:  (bool)true：		插入成功的反馈
+			(bool)false：	插入失败的反馈
 **********************************************************************************/
-bool InsertElem(SqList &list, int p, Elem x) {
-	if (p < 0 || p>list.length || list.length == MAXSIZE) {	// 1.插入位置小于起点 2.插入位置大于长度 3.线性表已满
-		return false;
-	}
-	for (int i = list.length; i > p; i--) {						// 从后往前遍历到指定位置	(i的起始位置 list.length 在线性表后一格的空白处)
-		list.Date[i] = list.Date[i - 1];						// 过程中将数据后移一格	(i的终止位置 p+1 在指定插入位置的后一格)
-	}
-	list.Date[p] = x;											// 在指定位置插入数据
-	list.length++;												// 线性表长度增加一
-	return true;
+bool InsertElem(SLNode *head, int index, Elem x) {			/* 由于单链表没有前结点信息，所以只能用 "后插法" */ 
+	SLNode *preTarget = GetElem(head, index-1);				// 调用 GetElem 找到指定位置结点的 "前一个结点"
+	if (preTarget == NULL) return false;					// 若找不到则退出
+	SLNode *insert = (SLNode*)malloc(sizeof(SLNode));		// 构建新结点
+	insert->Date = x;
+	insert->next = preTarget->next;							/* 新结点放在 "指定结点之前" */ 
+	preTarget->next = insert;								/* 新结点放在 "前结点之后" */
+	return true;											/* 先连后再连前, 否则会丢失后结点信息 */
 }
