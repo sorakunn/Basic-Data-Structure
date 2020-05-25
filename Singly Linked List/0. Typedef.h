@@ -9,7 +9,7 @@ typedef struct SLNode{
 }SLNode;
 
 bool InsertElem(SLNode *head, int index, Elem x);		// 挿入（在单链表的指定结点index处，挿入包含所给元素x的新结点）
-bool DeleteElem(SLNode &head, int p, Elem x);			// 削除（删除并取出指定下标位置上的数）
+bool DeleteElem(SLNode *head, int index);				// 削除（删除单链表的指定序号index结点）
 SLNode* LocateElem(SLNode* head, Elem x);				// 探索（查找值为x的第一个结点并返回其指针）
 
 void CreateHead(SLNode *head, Elem x[], int n);			// 先頭への挿入（从后往前逆向建立单链表，每次将新元素插在"头指针后"）

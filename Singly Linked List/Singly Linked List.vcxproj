@@ -24,6 +24,7 @@
   <ItemGroup>
     <ClCompile Include="1. Main.cpp" />
     <ClCompile Include="2. Insert.cpp" />
+    <ClCompile Include="3. Delete.cpp" />
     <ClCompile Include="4. Locate.cpp" />
     <ClCompile Include="5. Get.cpp" />
     <ClCompile Include="6. CreateHead.cpp" />
