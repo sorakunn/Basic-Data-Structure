@@ -33,6 +33,9 @@
     <ClCompile Include="0022. CreateTail.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0099. Print.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0000. Typedef.h">
