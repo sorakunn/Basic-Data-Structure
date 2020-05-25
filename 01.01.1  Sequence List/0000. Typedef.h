@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
 #define MAXSIZE 50 		// MAXSIZE：リストの容量（定数である）
