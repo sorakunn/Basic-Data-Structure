@@ -1,19 +1,19 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
-typedef int Elem;		// Elem£ºÄ¿˜Ë¤Î¥Ç©`¥¿¤ÎĞÍ
+typedef int Elem;		// Elemï¼šç›®æ¨™ã®ãƒ‡ãƒ¼ã‚¿ã®å‹
 
-/* "µ¥Á´±í"µÄ¶¨Òå */
+/* "å•é“¾è¡¨"çš„å®šä¹‰ */
 typedef struct SLNode{
-	Elem Date;		// Date£º¸ñ¼{¤·¤¿ÒªËØ
-	struct SLNode *next;	// *next£º´Î¤Î¥Î©`¥É¤òÖ¸¤¹¥İ¥¤¥ó¥¿
+	Elem Date;		// Dateï¼šæ ¼ç´ã—ãŸè¦ç´ 
+	struct SLNode *next;	// *nextï¼šæ¬¡ã®ãƒãƒ¼ãƒ‰ã‚’æŒ‡ã™ãƒã‚¤ãƒ³ã‚¿
 }SLNode;
 
-/* "µ¥Á´±í"µÄ»ù±¾²Ù×÷ */
-bool InsertElem(SLNode *head, int index, Elem x);	// ’·Èë£¨ÔÚµ¥Á´±íµÄÖ¸¶¨½áµãĞòºÅindex´¦’·Èë°üº¬Ëù¸øÔªËØxµÄĞÂ½áµã£©
-void CreateHead(SLNode *head, Elem x[], int n);		// ÏÈî^¤Ø¤Î’·Èë£¨´ÓºóÍùÇ°ÄæÏò½¨Á¢µ¥Á´±í£¬Ã¿´Î½«ĞÂÔªËØ²åÔÚ"Í·Ö¸Õëºó"£©
-void CreateTail(SLNode *head, Elem x[], int n);		// ááÎ²¤Ø¤Î’·Èë£¨´ÓÇ°ÍùºóÕıÏò½¨Á¢µ¥Á´±í£¬Ã¿´Î½«ĞÂÔªËØ²åÔÚ"±íÎ²"£©
-bool DeleteElem(SLNode *head, int index);		// Ï÷³ı£¨É¾³ıµ¥Á´±íµÄÖ¸¶¨ĞòºÅindex½áµã£©
-SLNode* LocateElem(SLNode* head, Elem x);		// Ì½Ë÷£¨²éÕÒÖµÎªxµÄµÚÒ»¸ö½áµã²¢·µ»ØÆäÖ¸Õë£©
-SLNode* GetElem(SLNode *head, int index);		// È¡³ö¤¹£¨²éÕÒÖ¸¶¨ĞòºÅindexµÄ½áµã²¢·µ»ØÆäÖ¸Õë£©
-void Print(SLNode *head); 				// ³öÁ¦£¨´òÓ¡µ¥Á´±íµÄËùÓĞÔªËØ£©
+/* "å•é“¾è¡¨"çš„åŸºæœ¬æ“ä½œ */
+bool InsertElem(SLNode *head, int index, Elem x);	// æŒ¿å…¥ï¼ˆåœ¨å•é“¾è¡¨çš„æŒ‡å®šç»“ç‚¹åºå·indexå¤„æŒ¿å…¥åŒ…å«æ‰€ç»™å…ƒç´ xçš„æ–°ç»“ç‚¹ï¼‰
+void CreateHead(SLNode *head, Elem x[], int n);		// å…ˆé ­ã¸ã®æŒ¿å…¥ï¼ˆä»åå¾€å‰é€†å‘å»ºç«‹å•é“¾è¡¨ï¼Œæ¯æ¬¡å°†æ–°å…ƒç´ æ’åœ¨"å¤´æŒ‡é’ˆå"ï¼‰
+void CreateTail(SLNode *head, Elem x[], int n);		// å¾Œå°¾ã¸ã®æŒ¿å…¥ï¼ˆä»å‰å¾€åæ­£å‘å»ºç«‹å•é“¾è¡¨ï¼Œæ¯æ¬¡å°†æ–°å…ƒç´ æ’åœ¨"è¡¨å°¾"ï¼‰
+bool DeleteElem(SLNode *head, int index);		// å‰Šé™¤ï¼ˆåˆ é™¤å•é“¾è¡¨çš„æŒ‡å®šåºå·indexä½ç½®çš„ç»“ç‚¹ï¼‰
+SLNode* LocateElem(SLNode* head, Elem x);		// æ¢ç´¢ï¼ˆæŸ¥æ‰¾å€¼ä¸ºxçš„ç¬¬ä¸€ä¸ªç»“ç‚¹å¹¶è¿”å›å…¶æŒ‡é’ˆï¼‰
+SLNode* GetElem(SLNode *head, int index);		// å–å‡ºã™ï¼ˆæŸ¥æ‰¾æŒ‡å®šåºå·indexçš„ç»“ç‚¹å¹¶è¿”å›å…¶æŒ‡é’ˆï¼‰
+void Print(SLNode *head); 				// å‡ºåŠ›ï¼ˆæ‰“å°å•é“¾è¡¨çš„æ‰€æœ‰å…ƒç´ ï¼‰
