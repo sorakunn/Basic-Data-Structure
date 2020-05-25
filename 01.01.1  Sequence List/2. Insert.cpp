@@ -1,21 +1,24 @@
-#include "0. Typedef.h"
+ï»¿#include "0. Typedef.h"
 /*********************************************************************************
-  *º¯Êı£º InsertElem
-  *ÃèÊö£º ÔÚÖ¸¶¨ÏÂ±êÎ»ÖÃ´¦’·ÈëËù¸øÔªËØ
-		/Sqlist *list/ Ö¸Ïò´ıÖ´ĞĞ²åÈë²Ù×÷ÏßĞÔ±íµÄÖ¸Õë
-	/int p/ ÏßĞÔ±íÒª²åÈëÎ»ÖÃµÄÏÂ±ê
-					/Elem x/ ´ı²åÈëµÄÄ¿±êElemÔªËØ
-  *Êä³ö:  none
-  *·µ»Ø:  true when the insert operation is successfuly done, otherwise return false
+  *å‡½æ•°ï¼š InsertElem
+  *æè¿°ï¼š åœ¨é¡ºåºè¡¨çš„æŒ‡å®šä¸‹æ ‡indexå¤„æŒ¿å…¥æ‰€ç»™å…ƒç´ x
+  *è¾“å‡ºï¼š	Sqlist &list		å¾…æ‰§è¡Œæ’å…¥æ“ä½œçº¿æ€§è¡¨çš„å¼•ç”¨ç±»å‹&list
+		int index		æ’å…¥ä½ç½®çš„ä¸‹æ ‡index
+		Elem x			å¾…æ’å…¥çš„Elemå…ƒç´ 
+  *è¾“å‡ºï¼š æ— 
+  *è¿”å›ï¼š	bool true		æ’å…¥æˆåŠŸçš„åé¦ˆ
+		bool false		æ’å…¥å¤±è´¥çš„åé¦ˆ
 **********************************************************************************/
-bool InsertElem(SqList &list, int p, Elem x) {
-	if (p < 0 || p>list.length || list.length == MAXSIZE) {	// 1.²åÈëÎ»ÖÃĞ¡ÓÚÆğµã 2.²åÈëÎ»ÖÃ´óÓÚ³¤¶È 3.ÏßĞÔ±íÒÑÂú
-		return false;
+bool InsertElem(SqList &list, int index, Elem x) {
+	if (index < 0) return false;				// 1.æ’å…¥ä½ç½®å°äºèµ·ç‚¹ (å¯ä»¥ç­‰äº)
+	if (index > list.length) return false;			// 2.æ’å…¥ä½ç½®å¤§äºé•¿åº¦ (å¯ä»¥ç­‰äº)
+	if (list.length == MAXSIZE) return false;		// 3.çº¿æ€§è¡¨å·²æ»¡
+	for (int i = list.length; i > index; i--) {		/* ä»åå¾€å‰éå†åˆ°æŒ‡å®šä½ç½®	*/
+		// içš„ "èµ·å§‹ä½ç½®" list.length	åœ¨é¡ºåºè¡¨åä¸€æ ¼çš„ç©ºç™½å¤„
+		list.Date[i] = list.Date[i - 1];		/* è¿‡ç¨‹ä¸­å°†æ•°æ®åç§»ä¸€æ ¼ */
+		// içš„ "ç»ˆæ­¢ä½ç½®" index+1	åœ¨æŒ‡å®šæ’å…¥ä½ç½®çš„åä¸€æ ¼
 	}
-	for (int i = list.length; i > p; i--) {						// ´ÓºóÍùÇ°±éÀúµ½Ö¸¶¨Î»ÖÃ	(iµÄÆğÊ¼Î»ÖÃ list.length ÔÚÏßĞÔ±íºóÒ»¸ñµÄ¿Õ°×´¦)
-		list.Date[i] = list.Date[i - 1];						// ¹ı³ÌÖĞ½«Êı¾İºóÒÆÒ»¸ñ	(iµÄÖÕÖ¹Î»ÖÃ p+1 ÔÚÖ¸¶¨²åÈëÎ»ÖÃµÄºóÒ»¸ñ)
-	}
-	list.Date[p] = x;											// ÔÚÖ¸¶¨Î»ÖÃ²åÈëÊı¾İ
-	list.length++;												// ÏßĞÔ±í³¤¶ÈÔö¼ÓÒ»
+	list.Date[index] = x;					/* åœ¨æŒ‡å®šä½ç½®æ’å…¥æ•°æ® */
+	list.length++;						/* çº¿æ€§è¡¨é•¿åº¦å¢åŠ ä¸€ */
 	return true;
 }
