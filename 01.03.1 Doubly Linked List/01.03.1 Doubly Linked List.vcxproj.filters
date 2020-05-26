@@ -41,7 +41,7 @@
     <ClCompile Include="0030. Delete.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="0010. ★Main.cpp">
+    <ClCompile Include="0010. Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
