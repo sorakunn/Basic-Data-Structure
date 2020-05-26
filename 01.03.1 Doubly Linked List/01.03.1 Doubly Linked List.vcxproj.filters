@@ -41,5 +41,8 @@
     <ClCompile Include="0041. Get.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0030. Delete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
