@@ -10,4 +10,5 @@
 		bool false		≤Â»Î ß∞‹µƒ∑¥¿°
 **********************************************************************************/
 bool InsertElem(DLNode *head, int index, Elem x) {
+	return true;
 }

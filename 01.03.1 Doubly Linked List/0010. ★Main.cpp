@@ -20,8 +20,8 @@ int main()
 	//DeleteElem(head, 5);					// 删除双链表的第5个结点
 	//Print(head);						// 输出结果：	{1,2,3,3,5}
 	///* 按值查找 */
-	//printf("%p\n", LocateElem(head, 5));			// 查找值为5的元素所在的结点指针		每次实时结果不同
-	//printf("%p\n", LocateElem(head, 4));			// 查找不存在元素所在的结点指针		NULL
+	printf("%p\n", LocateElem(head, 5));			// 查找值为5的元素所在的结点指针		每次实时结果不同
+	printf("%p\n", LocateElem(head, 4));			// 查找不存在元素所在的结点指针		NULL
 	///* 按序号查找 */
 	//printf("%d\n", GetElem(head, 4)->Date);			// 查找第4个结点内元素的值		3
 	return 0;
