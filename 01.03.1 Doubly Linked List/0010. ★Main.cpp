@@ -2,7 +2,7 @@
 
 int main()
 {
-	DLNode *head;						// 初始化一个头指针 
+	DLNode *head;						// 初始化一个头指针
 	head = (DLNode *)malloc(sizeof(DLNode));
 	head->prior = NULL;
 	head->next = NULL;
