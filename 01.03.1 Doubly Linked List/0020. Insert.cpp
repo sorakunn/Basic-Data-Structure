@@ -10,20 +10,18 @@
 		bool false		插入失败的反馈
 **********************************************************************************/
 bool InsertElem(DLNode *head, int index, Elem x) {
-	// 双链表包含前结点信息，所以有 "前插" "后插" 两种情况，此处以"后插法"为例
+	// 双链表包含前结点信息，所以有 "前插" "后插" 两种情况
+	// 题设预期是新结点（插在目标结点之前从而）代替了目标结点，所以应采用"前插法"
 	DLNode *target = GetElem(head, index);			/* 调用 GetElem 找到指定位置结点 */
 	// 若找不到则退出
 	if (target == NULL) return false;
 	// 构建新结点
 	DLNode *inserted = (DLNode*)malloc(sizeof(DLNode));
 	inserted->Date = x;
-	inserted->prior = target;
 	// 先将后一结点的地址信息存入新结点，防止丢失
-	inserted->next = target->next;				/* 新结点放入 "目标结点的后一结点" */
-	// 如果后元素存在，才需要进行后元素的前指针修改
-	if (target->next != NULL) {				/* 判断是否需要修改后元素的前指针*/
-		target->next->prior = inserted;
-	}
-	target->next = inserted;				/* 新结点放在 "目标结点之后" */
+	inserted->prior = target->prior;			/* 新结点的头放入 "目标结点的前结点" */
+	inserted->next = target;				/* 新结点的尾放入 "目标结点" */
+	target->prior->next = inserted;				/* 新结点放在 "目标结点的前结点之后" */
+	target->prior = inserted;				/* 新结点放在 "目标结点之前" */
 	return true;
 }
