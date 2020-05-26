@@ -14,8 +14,8 @@ SLNode* GetElem(SLNode *head, int index) {
 	if (index == 0) return head;				// 2.查找位置为 "头节点"
 	SLNode *p = head;
 	for (int i = 0; i < index; i++) {			/* 判断是否已到达 "目标位置"*/
-		if (p==NULL) break;				/* 判断是否已到达 "表尾" */
-		else p = p->next;				/* 进入下一结点 */
+		if (p == NULL) break;				/* 判断是否已到达 "表尾" */
+		p = p->next;					/* 进入下一结点 */
 		//退出循环时，找到了则p为 "目标结点地址"，没找到则p为 "NULL"
 	}
 	return p;
