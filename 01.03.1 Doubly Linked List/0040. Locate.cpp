@@ -12,9 +12,10 @@ DLNode* LocateElem(DLNode* head, Elem x) {
 	DLNode *p = head;
 	// 有头指针的双链表要先进一格
 	p = p->next;
-	while (p) {
-		if (p->Date == x) break;
+	while (p) {						/* 遍历到双链表尾 */
+		if (p->Date == x) break;			/* 判断当前数据是否等于目标值 */
 		p = p->next;
+		//退出循环时，找到了则p为 "目标结点地址"，没找到则p为 "NULL"
 	}
 	return p;
 }
