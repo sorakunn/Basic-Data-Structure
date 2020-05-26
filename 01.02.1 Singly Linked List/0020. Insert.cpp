@@ -15,10 +15,10 @@ bool InsertElem(SLNode *head, int index, Elem x) {
 	// 若找不到则退出
 	if (preTarget == NULL) return false;
 	// 构建新结点
-	SLNode *insert = (SLNode*)malloc(sizeof(SLNode));
-	insert->Date = x;
+	SLNode *inserted = (SLNode*)malloc(sizeof(SLNode));
+	inserted->Date = x;
 	// 先连后再连前, 否则会丢失后一个结点的地址信息
-	insert->next = preTarget->next;				/* 新结点放在 "指定结点之前" */ 
-	preTarget->next = insert;				/* 新结点放在 "前结点之后" */
+	inserted->next = preTarget->next;			/* 新结点放在 "指定结点之前" */ 
+	preTarget->next = inserted;				/* 新结点放在 "前结点之后" */
 	return true;
 }
