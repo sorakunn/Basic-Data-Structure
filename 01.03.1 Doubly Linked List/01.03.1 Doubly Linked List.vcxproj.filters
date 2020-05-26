@@ -32,5 +32,11 @@
     <ClCompile Include="0022. CreateTail.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0020. Insert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0040. Locate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -12,7 +12,7 @@ SLNode* LocateElem(SLNode* head, Elem x) {
 	SLNode *p = head;
 	// 有头指针的单链表要先进一格
 	p = p->next;
-	while (p != NULL) {					/* 遍历到单链表尾 */
+	while (p) {						/* 遍历到单链表尾 */
 		if (p->Date == x) break;			/* 判断当前数据是否等于目标值 */
 		p = p->next;
 		//退出循环时，找到了则p为 "目标结点地址"，没找到则p为 "NULL"
