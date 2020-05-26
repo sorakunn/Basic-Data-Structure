@@ -10,8 +10,17 @@
 		bool false		插入失败的反馈
 **********************************************************************************/
 bool InsertElem(DLNode *head, int index, Elem x) {
+	// 双链表包含前结点信息，所以有 "前插" "后插" 两种情况，此处以"后插法"为例
 	DLNode *target = GetElem(head, index);
 	if (target == NULL) return false;
-	DLNode
+	DLNode *inserted = (DLNode*)malloc(sizeof(DLNode));
+	inserted->Date = x;
+	inserted->prior = target;
+	inserted->next = target->next;
+	// 先连后再连前, 否则会丢失后一个结点的地址信息
+	if (target->next != NULL) {
+		target->next->prior = inserted;
+	}
+	target->next = inserted;
 	return true;
 }
