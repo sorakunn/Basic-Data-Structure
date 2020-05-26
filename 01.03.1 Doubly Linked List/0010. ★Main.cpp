@@ -11,8 +11,8 @@ int main()
 	CreateHead(head, date, 5);				// 通过 "头插法" 构造一个双链表
 	Print(head);						// 输出结果：	{5,4,3,2,1}
 	///* 尾插法建表 */
-	//CreateTail(head, date, 5);				// 通过 "尾插法" 构造一个双链表
-	//Print(head);						// 输出结果：	{1,2,3,4,5}
+	CreateTail(head, date, 5);				// 通过 "尾插法" 构造一个双链表
+	Print(head);						// 输出结果：	{1,2,3,4,5}
 	///* 插入结点 */
 	//InsertElem(head, 4, 3);					// 在第4个结点处，挿入包含元素3的新结点
 	//Print(head);						// 输出结果：	{1,2,3,3,4,5}
