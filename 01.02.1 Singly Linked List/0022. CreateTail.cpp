@@ -12,7 +12,7 @@ void CreateTail(SLNode *head, Elem x[], int n) {
 	SLNode *p = head;
 	for (int i = 0; i < n; i++) {
 		SLNode *temp = (SLNode*)malloc(sizeof(SLNode));	/* 建立存放数据的结点 */
-		temp->Date = x[i];				/* 新结点的头放入 "前一结点" */
+		temp->Date = x[i];
 		temp->next = NULL;				/* 新结点的尾放入 "NULL" */
 		p->next = temp;					/* 新结点的头放在 "表尾" */
 		p = temp;					/* 新结点 "变成表尾" */
