@@ -17,7 +17,7 @@ bool InsertElem(SLNode *head, int index, Elem x) {
 	// 构建新结点
 	SLNode *inserted = (SLNode*)malloc(sizeof(SLNode));
 	inserted->Date = x;
-	// 先连后再连前, 否则会丢失后一个结点的地址信息
+	// 先将后一结点的地址信息存入新结点，防止丢失
 	inserted->next = preTarget->next;			/* 新结点放在 "指定结点之前" */ 
 	preTarget->next = inserted;				/* 新结点放在 "前结点之后" */
 	return true;
