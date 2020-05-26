@@ -12,7 +12,7 @@ void CreateHead(SLNode *head, Elem x[], int n) {
 	for (int i = 0; i < n; i++) {
 		SLNode *temp = (SLNode*)malloc(sizeof(SLNode));	/* 建立存放数据的结点 */
 		temp->Date = x[i];
-		// 先连后再连前, 否则会丢失后一个结点的地址信息
+		// 先将后一结点的地址信息存入新结点，防止丢失
 		temp->next = head->next;			/* 新结点的尾放在 "第一个元素前" */ 
 		head->next = temp;				/* 新结点的头放在 "头指针后" */ 
 	}
