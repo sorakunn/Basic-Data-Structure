@@ -1,7 +1,7 @@
 ﻿#include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
-#define MAXSIZE 50 		// MAXSIZE：スタックの容量（定数である） 
+#define MAXSIZE 50 		// MAXSIZE：スタックの容量（定数である）
 typedef int Elem;		// Elem：目標のデータの型
 
 /* "顺序栈"的定义 */
