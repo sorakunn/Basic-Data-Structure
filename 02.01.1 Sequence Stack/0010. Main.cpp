@@ -12,7 +12,7 @@ int main()
 	int output=0;
 	for (int i = 0; i <= 4; i++) {
 		Pop(stack, output);				// 五个元素逐一 "出栈"
-		printf("%d", output);				// 输出结果：	{4,3,2,1,0}
+		printf("%d ", output);				// 输出结果：	{4,3,2,1,0}
 	}
 	return 0;
 }
