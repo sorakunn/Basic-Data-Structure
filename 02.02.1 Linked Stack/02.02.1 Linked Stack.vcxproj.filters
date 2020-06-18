@@ -26,5 +26,8 @@
     <ClCompile Include="0020. Push.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="0030. Pop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

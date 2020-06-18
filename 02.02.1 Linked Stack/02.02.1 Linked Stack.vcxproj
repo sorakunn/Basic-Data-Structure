@@ -128,6 +128,7 @@
   <ItemGroup>
     <ClCompile Include="0010. ★Main.cpp" />
     <ClCompile Include="0020. Push.cpp" />
+    <ClCompile Include="0030. Pop.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
