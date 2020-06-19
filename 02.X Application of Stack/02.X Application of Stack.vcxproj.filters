@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0001. ReverseString.cpp">
+    <ClCompile Include="0002. March.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="0001. Reverse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
