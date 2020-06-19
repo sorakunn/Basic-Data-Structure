@@ -1,7 +1,7 @@
 ﻿#include"0000. Typedef.h"
 /*********************************************************************************
   *函数： Match
-  *描述： 利用顺序栈检查括号匹配
+  *描述： 利用顺序栈检查分隔符匹配
   *输入：	char check[]		存放待检查字符串的字符数组check
 		int n			待检查字符串的字符个数n
   *输出： 无
@@ -12,9 +12,11 @@ bool Match(char check[], int n) {
 	char stack[50];						// 初始化一个栈
 	int top = -1;
 	for (int i = 0; i < n; i++) {
-		if (check[i] == '(') stack[++top] = '(';
-		if (check[i] == ')') top--;
-		if (top < -1) return false;
+		if (check[i] == '(') stack[++top] = '(';	/* 读到'('则执行入栈 */
+		if (check[i] == ')') {				/* 读到')'则执行出栈 */
+			if (top == -1) return false;
+			top--;
+		}
 	}
 	if (top > -1) return false;
 	if (top == -1) return true;
