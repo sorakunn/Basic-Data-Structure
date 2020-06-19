@@ -7,14 +7,14 @@
   *返回：	无
 **********************************************************************************/
 void Reverse(char* string) {
-	char SqStack[50];
+	char SqStack[50];					// 初始化一个栈
 	int top = -1;
 	char* p = string;
-	while (*p != NULL) {
+	while (*p != NULL) {					/* 将所有字符读入 */
 		SqStack[++top] = *p;
 		p++;
 	}
-	while (top > -1) {
+	while (top > -1) {					/* 将所有字符输出 */
 		printf("%c", SqStack[top--]);
 	}
 }
